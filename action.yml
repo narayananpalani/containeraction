@@ -1,0 +1,14 @@
+name: 'my first container action'
+description: 'Create Container from Github Actions'
+author: 'Narayanan Palani'
+inputs:
+  myInput:
+    description: 'greeting to use'
+    required: true
+    default: 'Awesome Container'
+outputs:
+  myOutput:
+    description: 'total memory'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
